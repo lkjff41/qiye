@@ -1,0 +1,40 @@
+{include file='common/html'}
+    <style type="text/css">
+        #wrapper
+        {
+            background-color: #ffffff;
+        }
+        .single_entry{margin-top:30px;}
+    </style>
+</head>
+<body class="single2">
+
+<script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script>
+<div id="mask" class="mask" onclick="CloseMask()"></div>
+{include file='common/header'}
+
+</div>
+    <div id="wrapper">
+       
+        <div class="single_entry page_entry">
+            <div class="entry">
+                <h2 style="margin: 0px 0px 20px; padding: 0px; border: 0px; font-size: 22px; vertical-align: baseline; font-family: 'Microsoft Yahei', 'Trebuchet MS', Arial, Tahoma, Helvetica, sans-serif; line-height: 26px; color: rgb(51, 51, 51);">
+    {$cate.catename}</h2>
+{$cate.content}
+
+            </div>
+    </div>
+
+    </div>
+{include file='common/foot'}
+<div style="display: none;" id="scroll">
+</div>
+<script type="text/javascript" src="__PUBLIC__/style/z700bike_global.js"></script>
+</body>
+</html>
